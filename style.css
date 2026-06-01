@@ -1,0 +1,103 @@
+body {
+  background-image: url("ISC Website Background.png");
+  background-size: 200px;
+  background-repeat: repeat;
+  background-position: center;
+}
+
+/* main*/
+.container {
+  display: flex;
+  gap: 40px;
+}
+
+/*left side*/
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-left: 120px;
+}
+
+/*right side*/
+.right {
+  position: relative;
+  width: 600px;
+}
+
+/*panel frame*/
+.panel {
+  width: 700px;
+  height: 1000px;
+
+  background-image: 
+  url("e for logs.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  padding: 40px;
+  box-sizing: border-box;
+
+  color: black;
+}
+
+/*text*/
+.log-title,
+.log-text {
+  text-align: center;
+}
+
+/*flower*/
+.below-frame {
+  width: 300px;
+  margin-left: 180px;
+  margin-top: 120px;
+}
+
+/*right side images*/
+.top-right-image {
+  width: 270px;
+}
+
+.second-image {
+  width: 450px;
+  height: 440px;
+  cursor: default;
+}
+
+.third-image {
+  width: 400px;
+  margin-top: 130px;
+  transform: translateX(-200px);
+}
+
+.new-image {
+  width: 200px;
+  transform: translate(-107px, -6px);
+  cursor: default;
+}
+
+.newer-image {
+  width:70px;
+  transform: translate(-523px, -510px);
+  cursor: default;
+}
+
+/*music radio*/
+#music-trigger {
+  width: 200px;
+
+  position: absolute;
+  top: 30px;
+  left: 40px;
+
+  cursor: pointer;
+  z-index: 10;
+
+  transform: scale(1);
+  transition: transform 0.2s ease;
+}
+
+#music-trigger:hover {
+  transform: scale(1.05);
+}
