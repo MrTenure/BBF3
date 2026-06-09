@@ -38,23 +38,16 @@ body {
 }
 
 /*text*/
-.panel {
-  text-align: center;
-}
-
 .log-link {
   display: block;
   text-decoration: none;
   color: inherit;
+  margin-bottom: 16px; /* THIS is your spacing */
 }
 
 .log-entry {
-  margin: 0;        
-}
-
-.log-link {
-  margin: 12px 0;   
-  display: block;
+  margin: 0;
+  padding: 0;
 }
 
 /*flower*/
