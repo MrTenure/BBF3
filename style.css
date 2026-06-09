@@ -27,18 +27,14 @@ body {
 
 /*panel frame*/
 .panel {
-  width: 700px;
-  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+}
 
-  background-image: 
-  url("e for logs.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-
-  padding: 40px;
-  box-sizing: border-box;
-
-  color: black;
+.log-entry {
+  margin: 0;
 }
 
 /*text*/
