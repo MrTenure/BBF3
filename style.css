@@ -43,17 +43,22 @@ body {
 
 /*text*/
 .panel {
-  text-align: center; 
+  text-align: center;
 }
 
 .log-link {
-  display: block;          
-  text-decoration: none;  
-  color: inherit;         
+  display: block;
+  text-decoration: none;
+  color: inherit;
 }
 
 .log-entry {
-  margin: 10px 0;
+  margin: 0;        
+}
+
+.log-link {
+  margin: 12px 0;   
+  display: block;
 }
 
 /*flower*/
