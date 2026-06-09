@@ -42,8 +42,7 @@ body {
 }
 
 /*text*/
-.log-entry,
-.log-text {
+.log-entry {
   text-align: center;
 }
 
