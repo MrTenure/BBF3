@@ -42,7 +42,7 @@ body {
 }
 
 /*text*/
-.log-title,
+.log-entry,
 .log-text {
   text-align: center;
 }
