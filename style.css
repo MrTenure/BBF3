@@ -101,3 +101,8 @@ body {
 #music-trigger:hover {
   transform: scale(1.05);
 }
+
+.log-link {
+  text-decoration: none;
+  color: inherit;
+}
