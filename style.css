@@ -20,7 +20,7 @@ body {
   margin-left: 120px;
 }
 
-/* RIGHT SIDE (IMPORTANT: anchor for images) */
+/* RIGHT SIDE (ANCHOR SYSTEM) */
 .right {
   position: relative;
   width: 600px;
@@ -28,7 +28,7 @@ body {
   overflow: hidden;
 }
 
-/* PANEL FRAME */
+/* PANEL */
 .panel {
   display: flex;
   flex-direction: column;
@@ -44,7 +44,6 @@ body {
   color: inherit;
 }
 
-/* LOG TEXT */
 .log-entry {
   margin: 0;
 }
@@ -56,42 +55,45 @@ body {
   margin-top: 120px;
 }
 
-/* RIGHT SIDE IMAGES (IMPORTANT FIX: absolute positioning) */
-.top-right-image,
-.second-image,
-.third-image,
-.new-image,
-.newer-image,
+/* ALL RIGHT IMAGES BASE RULE */
+.right img,
 #music-trigger {
   position: absolute;
 }
 
-/* IMAGE SIZES */
+/* RIGHT SIDE IMAGES (CLEAN POSITIONING - NO TRANSFORMS) */
+
 .top-right-image {
   width: 270px;
+  top: 0;
+  left: 0;
 }
 
 .second-image {
   width: 450px;
   height: 440px;
+  top: 80px;
+  left: 40px;
   cursor: default;
 }
 
 .third-image {
   width: 400px;
-  margin-top: 130px;
-  transform: translateX(-200px);
+  top: 320px;
+  left: -200px;
 }
 
 .new-image {
   width: 200px;
-  transform: translate(-107px, -6px);
+  top: 200px;
+  left: -107px;
   cursor: default;
 }
 
 .newer-image {
   width: 70px;
-  transform: translate(-523px, -510px);
+  top: 260px;
+  left: -523px;
   cursor: default;
 }
 
@@ -100,24 +102,11 @@ body {
   width: 200px;
   top: 30px;
   left: 40px;
-
   cursor: pointer;
   z-index: 10;
-
-  transform: scale(1);
   transition: transform 0.2s ease;
 }
 
 #music-trigger:hover {
   transform: scale(1.05);
-}
-
-.right img {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.right img {
-  outline: 2px solid red;
 }
