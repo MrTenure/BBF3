@@ -3,16 +3,15 @@ body {
   background-size: 200px;
   background-repeat: repeat;
   background-position: center;
-  margin: 0;
 }
 
-/* MAIN LAYOUT */
+/* main*/
 .container {
   display: flex;
   gap: 40px;
 }
 
-/* LEFT SIDE */
+/*left side*/
 .left {
   display: flex;
   flex-direction: column;
@@ -20,90 +19,82 @@ body {
   margin-left: 120px;
 }
 
-/* RIGHT SIDE (ANCHOR SYSTEM) */
+/*right side*/
 .right {
   position: relative;
   width: 600px;
-  height: 800px;
-  overflow: hidden;
 }
 
-/* PANEL */
+/*panel frame*/
 .panel {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+  width: 700px;
+  height: 1000px;
+
+  background-image: 
+  url("e for logs.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  padding: 40px;
+  box-sizing: border-box;
+
+  color: black;
+}
+
+/*text*/
+.log-title,
+.log-text {
   text-align: center;
 }
 
-/* LOG LINKS */
-.log-link {
-  display: block;
-  margin: 14px 0;
-  text-decoration: none;
-  color: inherit;
-}
-
-.log-entry {
-  margin: 0;
-}
-
-/* FLOWER */
+/*flower*/
 .below-frame {
   width: 300px;
   margin-left: 180px;
   margin-top: 120px;
 }
 
-/* ALL RIGHT IMAGES BASE RULE */
-.right img,
-#music-trigger {
-  position: absolute;
-}
-
-/* RIGHT SIDE IMAGES (CLEAN POSITIONING - NO TRANSFORMS) */
-
+/*right side images*/
 .top-right-image {
   width: 270px;
-  top: 0;
-  left: 0;
 }
 
 .second-image {
   width: 450px;
   height: 440px;
-  top: 80px;
-  left: 40px;
   cursor: default;
 }
 
 .third-image {
   width: 400px;
-  top: 320px;
-  left: -200px;
+  margin-top: 130px;
+  transform: translateX(-200px);
 }
 
 .new-image {
   width: 200px;
-  top: 200px;
-  left: -107px;
+  transform: translate(-107px, -6px);
   cursor: default;
 }
 
 .newer-image {
-  width: 70px;
-  top: 260px;
-  left: -523px;
+  width:70px;
+  transform: translate(-523px, -510px);
   cursor: default;
 }
 
-/* MUSIC RADIO */
+/*music radio*/
 #music-trigger {
   width: 200px;
+
+  position: absolute;
   top: 30px;
   left: 40px;
+
   cursor: pointer;
   z-index: 10;
+
+  transform: scale(1);
   transition: transform 0.2s ease;
 }
 
