@@ -42,8 +42,18 @@ body {
 }
 
 /*text*/
+.panel {
+  text-align: center; 
+}
+
+.log-link {
+  display: block;          
+  text-decoration: none;  
+  color: inherit;         
+}
+
 .log-entry {
-  text-align: center;
+  margin: 10px 0;
 }
 
 /*flower*/
