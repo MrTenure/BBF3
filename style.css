@@ -24,6 +24,7 @@ body {
 .right {
   position: relative;
   width: 600px;
+  height: 800px;
 }
 
 /* PANEL FRAME */
@@ -108,4 +109,8 @@ body {
 
 #music-trigger:hover {
   transform: scale(1.05);
+}
+
+.right img {
+  position: absolute;
 }
